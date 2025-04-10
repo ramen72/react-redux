@@ -15,7 +15,7 @@ const Home = () => {
                 <button onClick={()=>dispatch(multiple())} className='text-9xl text-red-600 border border-black py-6 px-14 inline-block leading-none'>*</button>
                 <button onClick={()=>dispatch(divided())} className='text-9xl text-green-600 border border-black py-6 px-14 inline-block leading-none'>/</button>
             </div>
-            <p className='absolute top-5'><strong>Note: </strong> always divided by 2 and multiple by 2</p>
+            <p className='absolute top-5 text-green-600 font-bold text-3xl capitalize'><strong className='text-red-600'>Note: </strong> always divided by 2 and multiple by 2</p>
         </div>
         </>
     );
