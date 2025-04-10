@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  value: 100,
+  value: 0,
 }
 
 export const counterSlice = createSlice({
@@ -14,7 +14,12 @@ export const counterSlice = createSlice({
       
     },
     decrement: (state) => {
-      state.value -= 1
+      if( state.value <= 0 ){
+        state.value = 0
+        alert("Value can not be negative.")
+      }else{
+        state.value -= 1
+      }
     },
   },
 })

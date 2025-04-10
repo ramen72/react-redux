@@ -5,10 +5,10 @@ const HomeComponent = () => {
     const count = useSelector((state) => state.count.value )
     console.log(count)
     return (
-        <div className='w-full h-[100vh] flex justify-center items-center gap-x-6'>
-            <button className='text-9xl text-red-600 border border-black py-1 px-5 inline-block leading-none'>-</button>
+        <div className=''>
+            {/* <button className='text-9xl text-red-600 border border-black py-1 px-5 inline-block leading-none'>-</button> */}
             <span className='text-9xl text-red-600'>{count}</span>
-            <button className='text-9xl text-green-600 border border-black py-1 px-5 inline-block leading-none'>+</button>
+            {/* <button className='text-9xl text-green-600 border border-black py-1 px-5 inline-block leading-none'>+</button> */}
         </div>
     );
 };
