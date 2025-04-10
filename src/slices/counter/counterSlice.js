@@ -13,17 +13,15 @@ export const counterSlice = createSlice({
       console.log(state);
       
     },
-    decrement: (state) => {
-      if( state.value <= 0 ){
-        state.value = 0
-        alert("Value can not be negative.")
-      }else{
-        state.value -= 1
-      }
+    multiple: (state) => {
+        state.value *= 2
+    },
+    divided: (state) => {
+      state.value /= 2
     },
   },
 })
 
-export const { increment, decrement } = counterSlice.actions
+export const { increment, decrement, multiple, divided } = counterSlice.actions
 
 export default counterSlice.reducer
